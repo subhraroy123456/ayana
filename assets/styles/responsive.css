@@ -1,0 +1,195 @@
+@media (max-width: 1199px) {
+  .top-heading h2 {
+    font-size: 50px;
+  }
+
+  .top-heading p {
+    font-size: 24px;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .top-heading h2 {
+    font-size: 45px;
+  }
+
+  .top-heading p {
+    font-size: 20px;
+  }
+
+  .banner {
+    align-items: flex-end;
+  }
+
+  .banner h1 {
+    margin-bottom: 60px;
+    font-size: 40px;
+  }
+
+  .about-btm-content p {
+    font-size: 22px;
+  }
+
+  .about-btm-content p span {
+    font-size: 40px;
+  }
+
+  .message {
+    background: url(../../imgs/message-bg-tab.png) no-repeat;
+  }
+
+  .message-quote {
+    margin-top: 50px;
+  }
+
+  .commitment {
+    background: url(../../imgs/commitment-bg-tab.png) no-repeat;
+    padding: 70px 0 800px;
+  }
+
+  .approach-right img {
+    min-height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-heading h2 {
+    font-size: 35px;
+    margin-bottom: 30px !important;
+  }
+
+  .top-heading p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .banner h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .logo img {
+    max-width: 200px;
+  }
+
+  .download-header span {
+    display: none;
+  }
+
+  .header .download-header a.download-btnn img {
+    margin-left: 0;
+  }
+
+  .approach {
+    padding: 40px 0;
+  }
+
+  .approach-right img {
+    min-height: initial;
+  }
+
+  .governance {
+    padding: 40px 0;
+  }
+
+  .environmental {
+    padding-top: 40px;
+  }
+  .contributing-right ul {
+    justify-content: flex-start;
+  }
+  .footer-mid h3 {
+    font-size: 22px;
+  }
+  .footer-top {
+    padding: 18px 0;
+  }
+  .footer-btm {
+    padding: 18px 0;
+  }
+  .scrollToTopBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .message .top-heading {
+    margin-bottom: 300px;
+  }
+
+  .commitment {
+    padding: 40px 0 550px !important;
+  }
+
+  .strategry {
+    padding: 40px 0 450px;
+    background: url(../../imgs/strategy.png) no-repeat;
+  }
+
+  .contributing-right {
+    margin-top: 12px;
+  }
+
+  .contributing {
+    background: url(../../imgs/contributing-bg-mobile.png) no-repeat;
+    padding: 40px 0px 500px;
+  }
+  .footer-mid p {
+    font-size: 14px;
+  }
+  .footer-btm p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .top-heading h2 {
+    font-size: 30px;
+  }
+  .banner h1 {
+    font-size: 26px;
+  }
+  .message {
+    background: url(../../imgs/message-bg-mobile.png) no-repeat;
+    padding-bottom: 250px;
+    padding-top: 40px;
+  }
+
+  .commitment {
+    background: url(../../imgs/commitment-bg-mobile2.png) no-repeat;
+    padding: 40px 0 220px !important;
+  }
+
+  .social {
+    padding: 40px 0 250px;
+    background: url(../../imgs/social-bg-mobile.png) no-repeat;
+  }
+
+  .message .top-heading {
+    margin-bottom: 450px;
+  }
+
+  .message-quote {
+    margin-top: -400px;
+  }
+
+  .message-quote img {
+    max-width: 150px;
+  }
+
+  .message-quote-img .msg {
+    font-size: 18px;
+    top: 5px;
+  }
+
+  .contributing {
+    padding: 40px 0px 400px;
+  }
+}

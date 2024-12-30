@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/* GLOBAL */
+body,
+html {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: headingFontCustom;
+  src: url(../../fonts/MADE_TOMMY_Bold.otf);
+}
+
+@font-face {
+  font-family: btnFontCustom;
+  src: url(../../fonts/MADE_TOMMY_Light.otf);
+}
+
+@font-face {
+  font-family: footerText;
+  src: url(../../fonts/GothamMedium.ttf);
+}
+
+.section-banner {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+p {
+  color: #000;
+}
+
+span {
+  display: inline-block;
+}
+
+.top-heading h2 {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: headingFontCustom;
+  margin-bottom: 40px;
+  color: #20409a;
+}
+
+.top-heading p {
+  font-size: 30px;
+  font-weight: regular;
+  font-family: "Open Sans", sans-serif;
+  color: #231f20;
+  line-height: 35px;
+}
+
+.scrollToTopBtn {
+  width: 70px;
+  height: 70px;
+  background: #20409a;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  z-index: 1000000000000000000000;
+  bottom: 0;
+  right: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(-100px);
+  pointer-events: all;
+}
+
+/* GLOBAL */
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.fixed {
+  background: #20409a;
+}
+
+.header .container-flex {
+  display: flex;
+}
+
+.header.fixed .logo {
+  padding: 0;
+}
+
+.header .download-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header .download-header a.download-btnn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #529e41;
+  padding: 20px;
+  color: #fff;
+  font-family: btnFontCustom;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .download-header a.download-btnn img {
+  max-width: 30px;
+  margin-left: 14px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.header .logo {
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .download-header a.download-btnn:hover {
+  background: #fac318;
+}
+
+.header .download-header a.download-btnn:hover img {
+  animation-name: bouncee;
+  -moz-animation-name: bouncee;
+}
+
+/* HEADER */
+
+/* BANNER */
+.banner {
+  background: url(../../imgs/banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+/* BANNER */
+
+/* ANIMATION */
+@keyframes bouncee {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/* ANIMATION */
+
+/* ABOUT AYANA */
+.about {
+  background: url(../../imgs/about-bg.png) no-repeat;
+  padding: 70px 0;
+}
+
+.about .top-heading {
+  text-align: center;
+}
+
+.about .top-heading h2 {
+  color: #fff;
+}
+
+.about .top-heading p {
+  color: #fff;
+}
+
+.about .top-heading p strong {
+  font-weight: bold;
+}
+
+.about-btm-content {
+  background: #44873ab0;
+  padding: 30px;
+  margin-top: 150px;
+}
+
+.about-btm-content {
+  text-align: center;
+}
+
+.about-btm-content p {
+  max-width: 720px;
+  margin: auto;
+  font-size: 30px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-btm-content p span {
+  margin: 10px 0;
+  color: #fff;
+  display: block;
+  font-size: 60px;
+  font-family: headingFontCustom;
+}
+
+/* ABOUT AYANA */
+
+/* MESSAGE */
+.message {
+  background: url(../../imgs/message-bg.png) no-repeat;
+  padding: 70px 0;
+}
+
+.message .top-heading p {
+  max-width: 550px;
+}
+
+.message-quote {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 550px;
+  margin-top: 80px;
+}
+
+.message-quote-img {
+  position: relative;
+}
+
+.message-quote-img .msg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+/* MESSAGE */
+
+/* COMMITMENT */
+.commitment {
+  background: url(../../imgs/commitment-bg.png) no-repeat;
+  padding: 70px 0 500px;
+}
+
+.commitment .top-heading p {
+  max-width: 650px;
+}
+
+/* COMMITMENT */
+
+/* STRATEGY */
+.strategry {
+  padding: 70px 0 550px;
+  background: url(../../imgs/strategy.png) no-repeat;
+}
+
+/* STRATEGY */
+
+/* CONTRIBUTING */
+.contributing {
+  background: url(../../imgs/contributing-bg.png) no-repeat;
+  padding: 70px 0px 400px;
+}
+
+.contributing-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contributing-right ul li {
+  margin: 0 10px;
+}
+
+.contributing .top-heading p {
+  max-width: 550px;
+}
+
+/* CONTRIBUTING */
+
+/* OUR APPROACH */
+.approach {
+  background: #cef497;
+  padding: 70px 0 200px;
+}
+
+/* OUR APPROACH */
+
+/* ENVIRONMENTAL */
+.environmental {
+  padding: 70px 0 400px;
+  background: url(../../imgs/exvironmental-bg.png) no-repeat;
+}
+
+/* ENVIRONMENTAL */
+
+/* SOCIAL SYSTEM */
+.social {
+  padding: 70px 0 550px;
+  background: url(../../imgs/social-bg.png) no-repeat;
+}
+
+/* SOCIAL SYSTEM */
+
+/* GOVERNANCE */
+.governance {
+  padding: 70px 0 140px;
+  background: #dcf5b8;
+}
+
+/* GOVERNANCE */
+
+/* FOOTER */
+.footer {
+  background: #20409a;
+}
+
+.footer-top {
+  padding: 30px 0;
+  border-bottom: 1px solid #ffffff4f;
+}
+
+.footer-top a {
+  font-family: footerText;
+  font-weight: medium;
+  font-size: 20px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-top a img {
+  margin-left: 20px;
+}
+
+.footer-mid {
+  padding: 50px 0;
+  border-bottom: 1px solid #ffffff4f;
+}
+
+.footer-mid .footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-mid p {
+  max-width: 660px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.footer-mid h3 {
+  font-size: 35px;
+  font-family: btnFontCustom;
+  color: #fff;
+}
+
+.footer-btm {
+  padding: 30px 0;
+}
+
+.footer-btm p {
+  max-width: 660px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+/* FOOTER */
